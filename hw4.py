@@ -32,7 +32,7 @@ def get_links(url):
     return list(parse_links(url, res.read()))
 
 
-def get_nonlocal_links(url):
+def get_nonlocal_links(url): 
     '''Get a list of links on the page specificed by the url,
     but only keep non-local links and non self-references.
     Return a list of (link, title) pairs, just like get_links()'''
@@ -40,7 +40,12 @@ def get_nonlocal_links(url):
     # TODO: implement
     links = get_links(url)
     filtered = []
+    for link in links:
+        if not link[0].startswith(url):
+            filtered.append(link)
+    #print("Filtered Links:", filtered)
     return filtered
+
 
 
 def crawl(root, wanted_content=[], within_domain=True):
@@ -56,6 +61,7 @@ def crawl(root, wanted_content=[], within_domain=True):
 
     root_domain = parse.urlparse(root).hostname
     if root_domain is not None:
+        # sometimes there is www in front
         domain_parts = root_domain.split('.')
         if domain_parts[0] == 'www':
             root_domain = '.'.join(domain_parts[1:])
@@ -69,24 +75,27 @@ def crawl(root, wanted_content=[], within_domain=True):
 
         try:
             req = request.urlopen(url)
-            html = req.read()
+            content_type = req.headers['Content-Type']
+            print(content_type)
+            if any(content_type.startswith(t) for t in wanted_content):
+                html = req.read()
 
-            visited.append(url)
-            visitlog.debug(url)
+                visited.append(url)
+                visitlog.debug(url)
 
-            for ex in extract_information(url, html):
-                extracted.append(ex)
-                extractlog.debug(ex)
+                for ex in extract_information(url, html):
+                    extracted.append(ex)
+                    extractlog.debug(ex)
 
-            for link, title in parse_links(url, html):
-                link_domain = parse.urlparse(link).hostname
-                if link_domain is not None:
-                    domain_parts = link_domain.split('.')
-                    if domain_parts[0] == 'www':
-                        link_domain = '.'.join(domain_parts[1:])
-                    if within_domain and link_domain != root_domain:
-                        continue
-                    queue.put(link)
+                for link, title in parse_links(url, html):
+                    link_domain = parse.urlparse(link).hostname
+                    if link_domain is not None:
+                        domain_parts = link_domain.split('.')
+                        if domain_parts[0] == 'www':
+                            link_domain = '.'.join(domain_parts[1:])
+                        if within_domain and link_domain != root_domain:
+                            continue
+                        queue.put(link)
 
         except Exception as e:
             print(e, url)
@@ -117,8 +126,8 @@ def writelines(filename, data):
 
 def main():
     #site = sys.argv[1]
-    #site = 'https://cs.jhu.edu/~yarowsky/'
-    site = 'https://www.york.ac.uk/teaching/cws/wws/webpage1.html'
+    site = 'https://cs.jhu.edu/~yarowsky/'
+    #site = 'https://theuselessweb.com/'
 
     links = get_links(site)
     writelines('links.txt', links)
@@ -126,7 +135,7 @@ def main():
     nonlocal_links = get_nonlocal_links(site)
     writelines('nonlocal.txt', nonlocal_links)
 
-    visited, extracted = crawl(site)
+    visited, extracted = crawl(site, wanted_content=['text/html'])
     writelines('visited.txt', visited)
     writelines('extracted.txt', extracted)
 
