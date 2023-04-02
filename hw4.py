@@ -55,12 +55,18 @@ def crawl(root, wanted_content=[], within_domain=True):
     extracted = []
 
     root_domain = parse.urlparse(root).hostname
-    domain_parts = root_domain.split('.')
-    if domain_parts[0] == 'www':
-        root_domain = '.'.join(domain_parts[1:])
+    if root_domain is not None:
+        domain_parts = root_domain.split('.')
+        if domain_parts[0] == 'www':
+            root_domain = '.'.join(domain_parts[1:])
+    else:
+        return visited, extracted
 
     while not queue.empty():
         url = queue.get()
+        if url in visited:
+            continue
+
         try:
             req = request.urlopen(url)
             html = req.read()
@@ -74,12 +80,13 @@ def crawl(root, wanted_content=[], within_domain=True):
 
             for link, title in parse_links(url, html):
                 link_domain = parse.urlparse(link).hostname
-                domain_parts = link_domain.split('.')
-                if domain_parts[0] == 'www':
-                    link_domain = '.'.join(domain_parts[1:])
-                if within_domain and link_domain != root_domain:
-                    continue
-                queue.put(link)
+                if link_domain is not None:
+                    domain_parts = link_domain.split('.')
+                    if domain_parts[0] == 'www':
+                        link_domain = '.'.join(domain_parts[1:])
+                    if within_domain and link_domain != root_domain:
+                        continue
+                    queue.put(link)
 
         except Exception as e:
             print(e, url)
@@ -110,7 +117,8 @@ def writelines(filename, data):
 
 def main():
     #site = sys.argv[1]
-    site = 'https://cs.jhu.edu/~yarowsky/'
+    #site = 'https://cs.jhu.edu/~yarowsky/'
+    site = 'https://www.york.ac.uk/teaching/cws/wws/webpage1.html'
 
     links = get_links(site)
     writelines('links.txt', links)
