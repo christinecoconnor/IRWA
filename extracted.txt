@@ -1,1 +1,0 @@
-('https://theuselessweb.com/terms', 'EMAIL', 'submissions@theuselessweb.com')

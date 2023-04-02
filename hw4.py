@@ -77,7 +77,7 @@ def crawl(root, wanted_content=[], within_domain=True):
             req = request.urlopen(url)
             content_type = req.headers['Content-Type']
             print(content_type)
-            if any(content_type.startswith(t) for t in wanted_content):
+            if wanted_content == [] or any(content_type.startswith(t) for t in wanted_content):
                 html = req.read()
 
                 visited.append(url)
@@ -135,7 +135,7 @@ def main():
     nonlocal_links = get_nonlocal_links(site)
     writelines('nonlocal.txt', nonlocal_links)
 
-    visited, extracted = crawl(site, wanted_content=['text/html'])
+    visited, extracted = crawl(site)#, wanted_content=['text/html'])
     writelines('visited.txt', visited)
     writelines('extracted.txt', extracted)
 
