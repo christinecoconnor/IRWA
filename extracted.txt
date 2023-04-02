@@ -1,0 +1,2 @@
+('https://cs.jhu.edu/~yarowsky/', 'ADDRESS', 'Baltimore, MD 21218')
+('https://cs.jhu.edu/~yarowsky/', 'EMAIL', 'yarowsky@jhu.edu')
