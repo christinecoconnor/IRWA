@@ -1,131 +1,17 @@
 DEBUG:charset_normalizer:Encoding detection: ascii is most likely the one.
+DEBUG:charset_normalizer:Encoding detection on empty bytes, assuming utf_8 intention.
+DEBUG:charset_normalizer:Encoding detection on empty bytes, assuming utf_8 intention.
 DEBUG:charset_normalizer:Encoding detection: ascii is most likely the one.
-DEBUG:visited:https://cs.jhu.edu/~yarowsky/
-DEBUG:extracted:('https://cs.jhu.edu/~yarowsky/', 'ADDRESS', 'Baltimore, MD 21218')
-DEBUG:extracted:('https://cs.jhu.edu/~yarowsky/', 'EMAIL', 'yarowsky@jhu.edu')
-DEBUG:charset_normalizer:Encoding detection: ascii is most likely the one.
+DEBUG:charset_normalizer:Encoding detection on empty bytes, assuming utf_8 intention.
+DEBUG:charset_normalizer:Encoding detection on empty bytes, assuming utf_8 intention.
+DEBUG:visited:https://www.cs.jhu.edu/~yarowsky/cs466.html
+DEBUG:visited:https://www.cs.jhu.edu/~yarowsky/
+DEBUG:extracted:('https://www.cs.jhu.edu/~yarowsky/', 'ADDRESS', 'Baltimore, MD 21218')
+DEBUG:extracted:('https://www.cs.jhu.edu/~yarowsky/', 'EMAIL', 'yarowsky@jhu.edu')
+DEBUG:visited:https://www.cs.jhu.edu/~yarowsky/466.officehours.html
+DEBUG:extracted:('https://www.cs.jhu.edu/~yarowsky/466.officehours.html', 'EMAIL', 'arya@jhu.edu')
+DEBUG:extracted:('https://www.cs.jhu.edu/~yarowsky/466.officehours.html', 'EMAIL', 'czhan105@jhu.edu')
+DEBUG:extracted:('https://www.cs.jhu.edu/~yarowsky/466.officehours.html', 'EMAIL', 'smei5@jhu.edu')
+DEBUG:visited:https://www.cs.jhu.edu/~yarowsky/601.466.on.exam.txt
+DEBUG:visited:https://www.cs.jhu.edu/~yarowsky/cs466slides/
 DEBUG:visited:http://www.cs.jhu.edu
-DEBUG:extracted:('http://www.cs.jhu.edu', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('http://www.cs.jhu.edu', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:http://www.cs.jhu.edu/~yarowsky/sigdat.html
-DEBUG:charset_normalizer:Encoding detection: ascii is most likely the one.
-DEBUG:visited:http://www.cs.jhu.edu/~yarowsky/pubs.html
-DEBUG:charset_normalizer:Encoding detection: ascii is most likely the one.
-DEBUG:visited:http://www.cs.jhu.edu/~yarowsky/cs466.html
-DEBUG:charset_normalizer:Encoding detection: ascii is most likely the one.
-DEBUG:visited:http://www.cs.jhu.edu/~yarowsky/cs415.html
-DEBUG:charset_normalizer:Encoding detection: ascii is most likely the one.
-DEBUG:visited:http://www.cs.jhu.edu#skip_content
-DEBUG:extracted:('http://www.cs.jhu.edu#skip_content', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('http://www.cs.jhu.edu#skip_content', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:http://www.cs.jhu.edu#alert
-DEBUG:extracted:('http://www.cs.jhu.edu#alert', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('http://www.cs.jhu.edu#alert', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu/it-support/
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'PHONE', '410-516-6281')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'PHONE', '410-516-6259')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'PHONE', '410-516-5249')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'PHONE', '410-516-4898')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'steve410@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'steve410@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'steve@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'steve@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'phil@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'phil@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'cvenghaus@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'cvenghaus@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/it-support/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:http://www.cs.jhu.edu#menu
-DEBUG:extracted:('http://www.cs.jhu.edu#menu', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('http://www.cs.jhu.edu#menu', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu/search/
-DEBUG:extracted:('https://www.cs.jhu.edu/search/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/search/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu/current-undergraduate-students/
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'PHONE', '410-516-4117')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'PHONE', '410-516-8001')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'PHONE', '410-516-7777')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'advising@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'advising@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'joanne@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'kculott1@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'rniles3@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'advising@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'advising@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'wseadvising@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'wseadvising@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'svazakas@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'joanne@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'kculott1@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'advising@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'advising@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'advising@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-undergraduate-students/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu/current-graduate-students/
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'PHONE', '410-516-7451')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'PHONE', '410-516-4117')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'PHONE', '410-516-7777')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'kimfranklin@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'rniles3@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'joanne@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'support@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'svazakas@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'etd-support@Jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'etd-support@Jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'rniles3@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'rniles3@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'ois@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'ois@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/current-graduate-students/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu
-DEBUG:extracted:('https://www.cs.jhu.edu', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu/about/
-DEBUG:extracted:('https://www.cs.jhu.edu/about/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/about/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu/about/message-from-dept-head/
-DEBUG:extracted:('https://www.cs.jhu.edu/about/message-from-dept-head/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/about/message-from-dept-head/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu/about/diversity-and-inclusion/
-DEBUG:extracted:('https://www.cs.jhu.edu/about/diversity-and-inclusion/', 'EMAIL', 'diversityandinclusion@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/about/diversity-and-inclusion/', 'EMAIL', 'diversityandinclusion@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/about/diversity-and-inclusion/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/about/diversity-and-inclusion/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu/about/employment-opportunities/
-DEBUG:extracted:('https://www.cs.jhu.edu/about/employment-opportunities/', 'EMAIL', 'fsearch2022@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/about/employment-opportunities/', 'EMAIL', 'fsearch2022@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/about/employment-opportunities/', 'EMAIL', 'jason@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/about/employment-opportunities/', 'EMAIL', 'suchi.saria@gmail.com')
-DEBUG:extracted:('https://www.cs.jhu.edu/about/employment-opportunities/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/about/employment-opportunities/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu/academic-programs/
-DEBUG:extracted:('https://www.cs.jhu.edu/academic-programs/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/academic-programs/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu/academic-programs/undergraduate-studies/
-DEBUG:extracted:('https://www.cs.jhu.edu/academic-programs/undergraduate-studies/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/academic-programs/undergraduate-studies/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu/academic-programs/graduate-studies/
-DEBUG:extracted:('https://www.cs.jhu.edu/academic-programs/graduate-studies/', 'PHONE', '410-516-7451')
-DEBUG:extracted:('https://www.cs.jhu.edu/academic-programs/graduate-studies/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/academic-programs/graduate-studies/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:visited:https://www.cs.jhu.edu/academic-programs/combined-bachelors-masters/
-DEBUG:extracted:('https://www.cs.jhu.edu/academic-programs/combined-bachelors-masters/', 'EMAIL', 'rniles3@jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/academic-programs/combined-bachelors-masters/', 'EMAIL', 'contactus@cs.jhu.edu')
-DEBUG:extracted:('https://www.cs.jhu.edu/academic-programs/combined-bachelors-masters/', 'EMAIL', 'contactus@cs.jhu.edu')
